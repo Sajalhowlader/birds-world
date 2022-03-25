@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "picture": "https://www.pexels.com/photo/green-and-white-small-bird-perching-on-red-petaled-flower-105803/",
+        "name": "5d17cc9b-4f55-4328-bac1-2e857ca2c6fa",
+        "price": false
+    },
+    {
+        "id": 2,
+        "picture": "https://www.pexels.com/photo/yellow-brown-bird-perch-on-tree-162121/",
+        "name": "e821e082-f377-419e-a707-3f8ec61101a2",
+        "price": true
+    },
+    {
+        "id": 3,
+        "picture": "https://www.pexels.com/photo/black-and-gray-bird-on-body-of-water-736520/",
+        "name": "2122a753-e71a-4a4f-a604-bc550e0017a9",
+        "price": true
+    },
+    {
+        "id": 4,
+        "picture": "https://www.pexels.com/photo/green-and-black-hummingbird-705314/",
+        "name": "ff1649ba-47fd-4f4b-ae1d-c5bd20ca4e1f",
+        "price": false
+    },
+    {
+        "id": 5,
+        "picture": "https://www.pexels.com/photo/yellow-lovebird-perched-on-gray-twig-625419/",
+        "name": "adfd27e2-7c20-4135-b805-9fd03325108f",
+        "price": false
+    },
+    {
+        "id": 6,
+        "picture": "https://www.pexels.com/photo/white-and-blue-and-red-and-brown-feathered-bird-85674/",
+        "name": "a88299c7-81da-41c7-8dab-97f7db195faf",
+        "price": true
+    },
+    {
+        "id": 7,
+        "picture": "https://www.pexels.com/photo/close-up-photo-of-blue-bird-perched-on-branch-2400030/",
+        "name": "f7601e2e-8d18-47b9-8d9e-b9263a1c34ad",
+        "price": true
+    },
+    {
+        "id": 8,
+        "picture": "https://www.pexels.com/photo/red-and-black-bird-on-red-flowers-36762/",
+        "name": "b347ce13-7b21-416d-8ad7-25e4d9652604",
+        "price": false
+    },
+    {
+        "id": 9,
+        "picture": "https://www.pexels.com/photo/brown-hummingbird-selective-focus-photography-1133957/",
+        "name": "f48481e2-890c-489e-a34d-bc8ffaca83d5",
+        "price": true
+    },
+    {
+        "id": 10,
+        "picture": "https://www.pexels.com/photo/close-up-photo-of-perched-kingfisher-326900/",
+        "name": "5c21c13b-239e-45d4-a9f1-4f91affa58ad",
+        "price": false
+    },
+    {
+        "id": 11,
+        "picture": "https://www.pexels.com/photo/gray-small-bird-on-green-leaves-70069/",
+        "name": "36295d6c-e9b0-44c5-a112-b467153bce85",
+        "price": true
+    },
+    {
+        "id": 12,
+        "picture": "https://www.pexels.com/photo/green-and-red-beak-bird-on-grey-branch-97533/",
+        "name": "f530e9b5-83ff-48f7-b06e-c5ad11a86d2b",
+        "price": false
+    },
+    {
+        "id": 13,
+        "picture": "https://www.pexels.com/photo/animal-avian-bird-bright-459198/",
+        "name": "e0c496f6-5639-466a-be21-604a716cd16a",
+        "price": true
+    },
+    {
+        "id": 14,
+        "picture": "https://www.pexels.com/photo/animal-avian-beak-bird-416179/",
+        "name": "b7060632-dfd3-4a63-af4b-b7f1fdcd4c43",
+        "price": false
+    },
+    {
+        "id": 15,
+        "picture": "https://www.pexels.com/photo/macro-photography-of-colorful-hummingbird-349758/",
+        "name": "b7060632-dfd3-4a63-af4b-b7f1fdcd4c43",
+        "price": false
+    }
+]
