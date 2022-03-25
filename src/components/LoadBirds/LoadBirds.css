@@ -1,0 +1,10 @@
+.grid-main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 40px;
+    padding-top: 25px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
