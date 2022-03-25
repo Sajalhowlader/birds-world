@@ -4,7 +4,20 @@
     margin: 40px;
     padding-top: 25px;
 }
-.grid-container{
+/* .grid-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+} */
+.my-cart {
+    margin-top: 47px;
+    text-align: center;
+}
+button.choose-btn {
+    border: none;
+    padding: 10px;
+    margin: 6px;
+    border: 1px solid turquoise;
+}
+.btn-head{
+    display: flex;
 }

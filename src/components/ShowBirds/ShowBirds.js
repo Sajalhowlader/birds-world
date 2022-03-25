@@ -5,13 +5,12 @@ const ShowBirds = ({ bird, cart }) => {
 
     const { name, price, picture, } = bird
     return (
-        <div>
-            <div className='card-container'>
-                <img className='img-fluid' src={picture} alt="" />
-                <h2>{name}</h2>
-                <h3>{price}</h3>
-                <button onClick={() => cart(bird)} className='cart-btn'>add <span className='text-white ms-2'> <GrCart /> </span> </button>
-            </div>
+
+        <div className='card-container col-12 col-md-4'>
+            <img className='img-fluid' src={picture} alt="" />
+            <h2>Name:{name}</h2>
+            <h3>Price:{price}</h3>
+            <button onClick={() => cart(bird)} className='cart-btn'>Add Your Cart <span className='text-white ms-2'> <GrCart /> </span> </button>
         </div>
 
     );

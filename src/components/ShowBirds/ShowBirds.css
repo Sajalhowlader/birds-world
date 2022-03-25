@@ -1,12 +1,15 @@
- .card-container {
-        width: 315px;
-        border: 2px solid gray;
-        margin-bottom: 30px;
-        text-align: center;
-        padding-top: 6px;
-        border-radius: 8px;
-        overflow: hidden;
-    }
+.card-container {
+    width: 315px;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 25px;
+    height: 455px;
+    position: relative;
+}
 .card-container img{
     height: 300px;
     width: 300px;
@@ -17,9 +20,12 @@
     padding: 10px 0px;
     background-color:  rgb(22, 91, 122);
     width: 100%;
-    
+    position: absolute;
+    left:0;
+    bottom: 0;
     font-weight: 500;
     font-size: 18px;
     border: none;
     color: white;
+    
 }

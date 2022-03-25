@@ -1,10 +1,17 @@
 import React from 'react';
-
+import './Cart.css'
+import { GrCart } from 'react-icons/gr';
 const Cart = ({ newcart }) => {
-    const { name, price, picture } = newcart
+    const { name, picture } = newcart
     return (
         <div>
-            <img src={picture} alt="" />
+            <div className='cart-items'>
+                <img src={picture} alt="" />
+                <h5 className='ms-3'>Name:{name}</h5>
+                <div>
+                    <GrCart />
+                </div>
+            </div>
         </div>
     );
 };

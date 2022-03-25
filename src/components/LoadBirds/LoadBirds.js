@@ -20,7 +20,7 @@ const LoadBirds = () => {
 
             <div>
                 <h1 className='text-center bitd-title'>BIRDS</h1>
-                <div className='grid-container container'>
+                <div className='grid-container  row g-4 '>
                     {
                         birds.map(bird => <ShowBirds key={bird.id} bird={bird} cart={mycart}></ShowBirds>)
                     }
@@ -33,8 +33,12 @@ const LoadBirds = () => {
                     <h2>My Cart</h2>
                     <div>
                         {
-                            carts.map(cart => <Cart newcart={cart}></Cart>)
+                            carts.map(cart => <Cart key={cart.id} newcart={cart}></Cart>)
                         }
+                    </div>
+                    <div className='btn-head'>
+                        <button className='choose-btn'>CHOOSE 1 FOR ME</button>
+                        <button className='choose-btn'>CHOOSE AGAIN</button>
                     </div>
                 </div>
             </div>
