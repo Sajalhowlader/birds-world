@@ -7,7 +7,7 @@ const Cart = ({ newcart }) => {
         <div>
             <div className='cart-items'>
                 <img src={picture} alt="" />
-                <h5 className='ms-3'>Name:{name}</h5>
+                <h5 className='m-3'>Name:{name}</h5>
                 <div>
                     <GrCart />
                 </div>
