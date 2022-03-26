@@ -2,8 +2,8 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div>
-            <div className='question'>
+        <div className='row container mx-auto'>
+            <div className='question col-12'>
                 <h1 className='text-center mb-4'>How React Works</h1>
 
                 <strong>
@@ -12,7 +12,8 @@ const Question = () => {
                     If we write a function with vanilla javascript like a counter. when we call the function in a different file the JScode repeat. But we can solve it easily by making react components. It's easy and readable.React Dom: React generate or make our code and react DOM render the code fow show.when we use react in our mobile react Dom convert to react native
                 </strong>
             </div>
-            <div className='question'>
+
+            <div className='question col-12'>
                 <h1 className='text-center mb-4'>Props Vs State</h1>
                 <div className=' d-flex m-3 '>
                     <div>
@@ -39,7 +40,7 @@ const Question = () => {
                 </div>
 
             </div>
-            <div className='question'>
+            <div className='question col-12'>
                 <h1 className='text-center mb-4'>How Useeffect work</h1>
 
                 <strong>
