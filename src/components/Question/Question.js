@@ -37,7 +37,16 @@ const Question = () => {
                             06. States can be used for rendering dynamic changes with the components</strong>
                     </div>
                 </div>
+                <div className='question'>
+                    <h1 className='text-center mb-4'>How Useeffect work</h1>
 
+                    <strong>
+
+                        UseEffect is a hook in react. It gives us tow one function and one dependence. when we fetch data from anywhere it helps to set and update our data. When any state is use an effect set and updates it. When we want to perform something after each render of component then we can use the useEffect hook. By using this Hook, we tell React that our component needs to do something after render by passing a function. React remember the function we passed in useEffect hook and call it later after performing the DOM updates.
+
+                        By default, the useEffect hook runs after the first render and after every update. React updates the DOM by the time it runs the effects.
+                    </strong>
+                </div>
             </div>
         </div>
     );
