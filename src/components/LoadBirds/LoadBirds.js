@@ -15,8 +15,9 @@ const LoadBirds = () => {
     }, [])
     const mycart = birds => {
         const newcart = [...carts, birds]
+
         if (newcart.length === 5) {
-            alert("hello")
+            alert("You can selected only 4 items")
         } else {
 
             setCurt(newcart)
@@ -26,14 +27,19 @@ const LoadBirds = () => {
         const randomCart = carts[Math.floor(Math.random() * carts.length)];
 
         if (randomCart === undefined) {
-            alert("kk")
+            alert("Please select something")
         } else {
             setRandocart(randomCart)
         }
-
-
-
     }
+
+
+    const removeCart = () => {
+        const carts = []
+        setCurt(carts)
+    }
+
+
     return (
         <div className='grid-main-container d-flex flex-sm-column flex-lg-row'>
 
@@ -60,10 +66,12 @@ const LoadBirds = () => {
 
                         <button onClick={() => getrandomCart()} className='choose-btn'>CHOOSE 1 FOR ME</button>
 
-                        <button className='choose-btn'>CHOOSE AGAIN</button>
+                        <button onClick={() => removeCart()} className='choose-btn'>CHOOSE AGAIN</button>
 
                     </div>
-                    <Random randomCart={randomCart}></Random>
+                    <div>
+                        <Random randomCart={randomCart}></Random>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,14 @@
 .nav-container{
     background-color: rgb(22, 91, 122);
 }
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+}
 .items-container{
     height: 80px;
     color: white;
@@ -15,3 +23,4 @@
 .items a:hover{
     color: tomato;
 }
+

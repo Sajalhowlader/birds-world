@@ -3,7 +3,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <nav className='nav-container'>
-            <div className='container d-flex justify-content-between align-items-center items-container'>
+            <div className='container items-container navBar'>
                 <div>
                     <h1>BIRDS WORLD</h1>
                 </div>
