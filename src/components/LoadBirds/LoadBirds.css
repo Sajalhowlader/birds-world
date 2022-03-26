@@ -4,6 +4,15 @@
     margin: 40px;
     padding-top: 25px;
 }
+.question {
+    width: 1050px;
+    margin: auto;
+    background: #0d0a1c;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
 @media screen and (max-width:668px) {
     .grid-main-container{
         flex-direction: column;

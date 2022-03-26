@@ -41,39 +41,67 @@ const LoadBirds = () => {
 
 
     return (
-        <div className='grid-main-container d-flex flex-sm-column flex-lg-row'>
+        <div >
 
-            <div>
-                <h1 className='text-center bitd-title'>BIRDS</h1>
-                <div className='grid-container row g-4 '>
-                    {
-                        birds.map(bird => <ShowBirds key={bird.id} bird={bird} cart={mycart} ></ShowBirds>)
-                    }
-                </div>
-            </div>
-
-            <div className='my-cart'>
-
-                <div className='cart'>
-                    <h2>My Cart</h2>
-                    <div>
-
+            <div className='grid-main-container d-flex flex-sm-column flex-lg-row' >
+                <div>
+                    <h1 className='text-center bitd-title'>BIRDS</h1>
+                    <div className='grid-container row g-4 '>
                         {
-                            carts.map(cart => <Cart key={cart.id} newcart={cart}></Cart>)
+                            birds.map(bird => <ShowBirds key={bird.id} bird={bird} cart={mycart} ></ShowBirds>)
                         }
                     </div>
-                    <div className='btn-head'>
 
-                        <button onClick={() => getrandomCart()} className='choose-btn'>CHOOSE 1 FOR ME</button>
+                </div>
 
-                        <button onClick={() => removeCart()} className='choose-btn'>CHOOSE AGAIN</button>
+                <div className='my-cart'>
 
-                    </div>
-                    <div>
-                        <Random randomCart={randomCart}></Random>
+                    <div className='cart'>
+                        <h2>My Cart</h2>
+                        <div>
+
+                            {
+                                carts.map(cart => <Cart key={cart.id} newcart={cart}></Cart>)
+                            }
+                        </div>
+                        <div className='btn-head'>
+
+                            <button onClick={() => getrandomCart()} className='choose-btn'>CHOOSE 1 FOR ME</button>
+
+                            <button onClick={() => removeCart()} className='choose-btn'>CHOOSE AGAIN</button>
+
+                        </div>
+                        <div>
+                            <Random randomCart={randomCart}></Random>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
+            <div className='question'>
+                <h1 className='text-center mb-4'>How React Works</h1>
+
+                <strong>
+
+                    React is a javascript library that makes a user interface. When we write code under the react components it will compile raw javascript helping by babel. it makes a virtual dom and compares our real dom. When we write code the virtual dom compares with our real dom and shows the output. The JSX gets converted to React.CreateElement by the function call. Each of the functions returns an object similar to the object.
+                    If we write a function with vanilla javascript like a counter. when we call the function in a different file the JScode repeat. But we can solve it easily by making react components. It's easy and readable.React Dom: React generate or make our code and react DOM render the code fow show.when we use react in our mobile react Dom convert to react native
+                </strong>
+            </div>
+            <div className='question'>
+                <h1 className='text-center mb-4'>Props Vs State</h1>
+
+                <strong>
+
+                    01. Props are read-only
+                    02. Props are immutable
+                    03. Props can be accessed by child components.
+                    04. Stateless component can have Props
+                    05. Props make components reusable.
+                    06.Props are used to communicate between components
+                </strong>
+            </div>
+
         </div>
     );
 };
