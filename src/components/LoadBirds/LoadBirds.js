@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Random from '../Random/Random';
 import ShowBirds from '../ShowBirds/ShowBirds';
 import './LoadBirds.css'
 
 const LoadBirds = () => {
     const [birds, setBirds] = useState([])
     const [carts, setCurt] = useState([])
+    const [randomCart, setRandocart] = useState([])
     useEffect(() => {
         fetch('birds.json')
             .then(res => res.json())
@@ -13,16 +15,33 @@ const LoadBirds = () => {
     }, [])
     const mycart = birds => {
         const newcart = [...carts, birds]
-        setCurt(newcart)
+        if (newcart.length === 5) {
+            alert("hello")
+        } else {
+
+            setCurt(newcart)
+        }
+    }
+    const getrandomCart = () => {
+        const randomCart = carts[Math.floor(Math.random() * carts.length)];
+
+        if (randomCart === undefined) {
+            alert("kk")
+        } else {
+            setRandocart(randomCart)
+        }
+
+
+
     }
     return (
-        <div className='grid-main-container'>
+        <div className='grid-main-container d-flex flex-sm-column flex-lg-row'>
 
             <div>
                 <h1 className='text-center bitd-title'>BIRDS</h1>
-                <div className='grid-container  row g-4 '>
+                <div className='grid-container row g-4 '>
                     {
-                        birds.map(bird => <ShowBirds key={bird.id} bird={bird} cart={mycart}></ShowBirds>)
+                        birds.map(bird => <ShowBirds key={bird.id} bird={bird} cart={mycart} ></ShowBirds>)
                     }
                 </div>
             </div>
@@ -32,14 +51,19 @@ const LoadBirds = () => {
                 <div className='cart'>
                     <h2>My Cart</h2>
                     <div>
+
                         {
                             carts.map(cart => <Cart key={cart.id} newcart={cart}></Cart>)
                         }
                     </div>
                     <div className='btn-head'>
-                        <button className='choose-btn'>CHOOSE 1 FOR ME</button>
+
+                        <button onClick={() => getrandomCart()} className='choose-btn'>CHOOSE 1 FOR ME</button>
+
                         <button className='choose-btn'>CHOOSE AGAIN</button>
+
                     </div>
+                    <Random randomCart={randomCart}></Random>
                 </div>
             </div>
         </div>
